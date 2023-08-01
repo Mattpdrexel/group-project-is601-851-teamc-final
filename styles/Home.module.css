@@ -1,0 +1,45 @@
+.container {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: #F9F7E9;
+    color: #603809;
+  }
+  
+  .header {
+    padding-top: 20px;
+    background: rgb(133, 74, 74);
+    height: 72px;
+    position: relative;
+  }
+  
+  .logo {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+  }
+  
+  .navItems {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navItems li {
+    margin-right: 100px;
+  }
+  
+  /* ... rest of your styles ... */
+  
+  .footer {
+    background-color: rgba(133, 74, 74, 0.8);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .footer p {
+    color: #FFF;
+  }
+  
