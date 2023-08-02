@@ -35,9 +35,11 @@
     color: white;
   }
   
-  .navItems li {
-    list-style: none;
-    margin-right: 100px;
+  .navItems {
+    display: flex;
+    gap: 20px; /* Adjust this value to increase or decrease the space between items */
+    list-style-type: none; /* This removes the bullet points from the list items */
+    padding: 0; /* This removes any default padding */
   }
   
   .navItems a {
