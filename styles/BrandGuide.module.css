@@ -1,0 +1,41 @@
+.brandguidetitle {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  
+  .brandguideLogo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .flexContainerSectionImage {
+    width: 45%;
+    height: auto;
+  }
+  
+  .flexContainerInfoSection {
+    width: 45%;
+    background-color: #eed89f;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid #eed89f;
+    margin-bottom: 100px;
+  }
+  
+  .centerSection {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
