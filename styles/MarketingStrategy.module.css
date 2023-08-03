@@ -1,0 +1,101 @@
+.navContainer {
+    padding-top: 20px;
+    background: rgb(133, 74, 74);
+    height: 72px;
+    position: relative;
+  }
+  
+  .wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navUl {
+    display: flex;
+  }
+  
+  .navLogo {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+  }
+  
+  .navItemsLi {
+    list-style: none;
+    margin-right: 100px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .infoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .infoOl,
+  .infoP {
+    color: #707070;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  
+  .infoP {
+    padding: 20px 0;
+  }
+  
+  .infoH2 {
+    color: var(--coffee, #603809);
+    font-family: "Playfair Display", serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .infoH1 {
+    color: var(--coffee, #603809);
+    font-family: "Fjalla One", sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  
+  .footer {
+    background-color: rgba(133, 74, 74, 0.8);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .footerP {
+    color: #FFF;
+  }
+  
