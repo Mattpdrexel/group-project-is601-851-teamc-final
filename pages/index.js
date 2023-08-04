@@ -1,72 +1,50 @@
-import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
-import Newsletter from '../components/Newsletter.js'
-import styles from '../styles/Home.module.css'
+import NewsletterForm from '../components/Newsletter'
+import styles from '../styles/MarketingStrategy.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Rise & Grind</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
-
-      <header className={styles.headerContainer}>
-        <div className={styles.navContainer}>
-          <div className={styles.wrapper}>
-            <nav>
-              <div className={styles.logo}>Rise & Grind</div>
-              <ul className={styles.navItems}>
-                <li><Link legacyBehavior href="/" passHref><a>Home</a></Link></li>
-                <li><Link legacyBehavior href="/aboutus" passHref><a>About Us</a></Link></li>
-                <li><Link legacyBehavior href="/buyerpersona" passHref><a>Buyer Persona</a></Link></li>
-                <li><Link legacyBehavior href="/brandguide" passHref><a>Brand Guide</a></Link></li>
-                <li><Link legacyBehavior href="/marketingstrategy" passHref><a>Marketing Strategy</a></Link></li>
-              </ul>
-            </nav>
+      <div className={styles.navContainer}>
+        <h1>Rise & Grind</h1>
+        <nav>
+          <ul className={styles.navUl}>
+            <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Home</a></Link></li>
+            <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Our Coffee</a></Link></li>
+            <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Blog</a></Link></li>
+            <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Privacy</a></Link></li>
+          </ul>
+        </nav>
+      </div>
+      <div className={styles.flexContainer}>
+        <div className={styles.sectionImage}>
+          <Image
+            src="/images/logos/Vistaprint/logo_image_only.png"
+            alt="Rise & Grind Logo"
+            width={500}
+            height={500}
+          />
+        </div>
+        <div className={styles.infoSection}>
+          <div>
+            <h2><i>Daily Delight</i></h2>
+            <h1>Real <span style={{ color: '#603809' }}>Coffee</span>, Real <span style={{ color: '#603809' }}>People</span></h1>
+            <p>Rise with us. Grind with us. Start your day the 'Regular Joe' way. Experience high-quality, authentic coffee without the frills. Fuel your everyday pursuits with Rise & Grind.</p>
+          </div>
+          <div className={styles.callToAction}>
+            <NewsletterForm />
+            <small>Relax. Information is for promotional services only.</small>
           </div>
         </div>
-      </header>
-
-      <main>
-        <div className={styles.bannerContainer}>
-          <img className={styles.bannerImage} src="/images/Art/Unsplash/nathan-dumlao-pMW4jzELQCw-unsplash 1.png" alt="banner-photo" />
-          <div className={styles.videoWrapper}>
-            <h2 className={styles.videoTitle}>The Rise & Grind Proposal</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DVVgfZic_dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <section className={styles.welcomeContainer}>
-          <div className={styles.welcomeText}>
-            <h1>Welcome to "Rise & Grind"</h1>
-
-
-            <Newsletter />
-
-            
-          </div>
-          <img className={styles.welcomeLogo} src="/images/logos/Vistaprint/logo_image_only.png" alt="rise-and-grind-logo" />
-        </section>
-
-        <section className={styles.valuesSection}>
-          {/* ... */}
-          <div className={styles.valueCards}>
-            {/* ... */}
-          </div>
-        </section>
-
-        <div className={styles.getStarted}>
-          <h3>Great ideas start with great coffee. Let's help you achieve that.</h3>
-          <h2>Get started today.</h2>
-          <button>Join Us</button>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <p>&copy; 2023 Rise & Grind. All rights reserved.</p>
-      </footer>
+      </div>
+      <div className={styles.footerBanner}>
+        <img
+          src="/images/Art/orange_rectangle.png"
+          alt="Rise & Grind Logo"
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+      </div>
     </div>
   )
 }
