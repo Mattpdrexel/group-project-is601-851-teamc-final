@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Newsletter from '../components/Newsletter.js'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -40,7 +41,11 @@ export default function Home() {
         <section className={styles.welcomeContainer}>
           <div className={styles.welcomeText}>
             <h1>Welcome to "Rise & Grind"</h1>
-            {/* ... */}
+
+
+            <Newsletter />
+
+            
           </div>
           <img className={styles.welcomeLogo} src="/images/logos/Vistaprint/logo_image_only.png" alt="rise-and-grind-logo" />
         </section>
