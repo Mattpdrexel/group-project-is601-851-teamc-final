@@ -1,0 +1,59 @@
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 30px 60px;
+    color: #454641;
+    background-color: #F9F7E9;
+}
+
+.newsletterForm {
+    background: #fff;
+    padding: 20px 50px 50px;
+    border-radius: 20px;
+    max-width: 800px; /* adjust this value as per your needs */
+    width: 100%; /* this will ensure that the form takes full width of the parent container */
+    border: 2px solid #000000; /* Add this line */
+
+}
+
+  
+  .formTitle {
+    color: #3F170E;
+    font-family: 'Rubik';
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .fieldGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .emailInput {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .subscribeButton {
+    background: #603809;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Rubik';
+}
+  
+  .emailInput::placeholder { /* Most modern browsers */
+    font-size: 25px;
+  }

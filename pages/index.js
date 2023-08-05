@@ -22,19 +22,20 @@ export default function Home() {
           <Image
             src="/images/logos/Vistaprint/logo_image_only.png"
             alt="Rise & Grind Logo"
-            width={500}
-            height={500}
+            width={750}
+            height={750}
           />
         </div>
         <div className={styles.infoSection}>
-          <div>
+          <div className={styles.textContent}>
             <h2><i>Daily Delight</i></h2>
-            <h1>Real <span style={{ color: '#603809' }}>Coffee</span>, Real <span style={{ color: '#603809' }}>People</span></h1>
-            <p>Rise with us. Grind with us. Start your day the 'Regular Joe' way. Experience high-quality, authentic coffee without the frills. Fuel your everyday pursuits with Rise & Grind.</p>
+            <h1 style={{ fontSize: 50}}>Real <span style={{ color: '#A95E33' }}>Coffee</span>, Real <span style={{ color: '#A95E33' }}>People</span></h1>
+            <div className={styles.heroText}>
+                <p style={{ fontSize: 30 }}>Rise with us. Grind with us. Start your day the 'Regular Joe' way. Experience high-quality, authentic coffee without the frills. Fuel your everyday pursuits with Rise & Grind.</p>
+            </div>
           </div>
           <div className={styles.callToAction}>
             <NewsletterForm />
-            <small>Relax. Information is for promotional services only.</small>
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@ export default function Home() {
         <img
           src="/images/Art/orange_rectangle.png"
           alt="Rise & Grind Logo"
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover'}}
         />
       </div>
     </div>

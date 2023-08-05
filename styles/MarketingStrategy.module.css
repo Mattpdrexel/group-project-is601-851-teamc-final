@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 .navContainer {
-    padding-top: 20px;
-    background: rgb(133, 74, 74);
-    height: 72px;
-    position: relative;
-  }
-  
+  margin-top: 75px;
+  padding-left: 100px;
+  background-color: #fff; /* white background */
+  border-radius: 20px; /* rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+}
+
   .wrapper {
     max-width: 1350px;
     margin: 0 auto;
@@ -105,17 +112,24 @@
     align-items: center;
   }
   
-  .navContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1em;
-  }
+
   
-  .navUl {
+
+  .navUl a {
+    color: #3F170E;
+    text-decoration: none;
     display: flex;
     gap: 1em;
+    font-size: 50px;  
   }
+
+  .navUl a:active {
+    color: white;
+    background-color: #3F170E;
+    border-radius: 5px;  /* optional, to make the button round */
+    padding: 10px;  /* optional, for button-like appearance */
+  }
+  
   
   .navItemsLi {
     list-style: none;
@@ -130,6 +144,7 @@
   
   .sectionImage {
     flex: 1;
+    padding-left: 200px;
   }
   
   .infoSection {
@@ -153,4 +168,77 @@
     background-color: orange;
   }
   
+  .container {
+    background-color: #F9F7E9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
   
+  
+  .navUl {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navItemsLi {
+    cursor: pointer;
+  }
+  
+  .flexContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sectionImage {
+    width: 50%;
+  }
+  
+  .infoSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .textContent {
+    margin-bottom: 40px;
+  }
+  
+  .callToAction {
+    width: 100%;
+  }
+  
+  .footerBanner {
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .infoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 30px 60px;
+    color: #454641;
+    background-color: #F9F7E9;
+}
+
+.heroText {
+  max-width: 600px; /* Adjust this to the desired width */
+}
+
+.navContainer h1 {
+  color: #D56A34;
+  font-size: 50px;
+  font-family: "Fjalla One", sans-serif;  /* added the fallback font */
+}
