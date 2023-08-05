@@ -4,6 +4,8 @@ import styles from '../styles/MarketingStrategy.module.css'; // Adjust the path 
 
 function MarketingStrategy() {
   return (
+    <>
+
     <div>
       <div className={styles.navContainer}>
         <div className={styles.wrapper}>
@@ -43,6 +45,7 @@ function MarketingStrategy() {
         <p>&copy; 2023 Rise & Grind. All rights reserved.</p>
       </footer>
     </div>
+    </>
   );
 }
 

@@ -25,6 +25,7 @@ export default function Home() {
             width={500}
             height={500}
           />
+         main
         </div>
         <div className={styles.infoSection}>
           <div>
