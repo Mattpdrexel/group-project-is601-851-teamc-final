@@ -6,11 +6,6 @@ import styles from '../styles/BuyerPersona.module.css'
 export default function BuyerPersona() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Rise & Grind</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-      </Head>
 
       <header className={styles.header}>
         <div className={styles.logo}>Rise & Grind</div>

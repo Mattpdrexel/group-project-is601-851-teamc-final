@@ -6,11 +6,6 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Rise & Grind</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
 
       <header className={styles.headerContainer}>
         <div className={styles.navContainer}>
