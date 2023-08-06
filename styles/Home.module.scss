@@ -1,9 +1,5 @@
 @import './globals.scss';
 
-.body {
-  font-family: $primary-font;
-}
-
 .container {
   zoom: 0.8;
   display: flex;
@@ -14,47 +10,6 @@
   padding: 0 20px;
 }
 
-.navContainer {
-  position: relative;
-  z-index: 100;
-  margin-top: 75px;
-  padding-left: 100px;
-  background-color: #fff;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  box-shadow: 0px 10px 30px $dark-overlay;
-  font-family: $secondary-font;
-  padding: 0 30px;
-
-  h1 {
-    color: $secondary-color;
-    font-size: 50px;
-  }
-}
-
-.navUl {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-
-  a {
-    color: $dark-brown;
-    text-decoration: none;
-    display: flex;
-    gap: 1em;
-    font-size: 50px;  
-
-    &:active {
-      color: white;
-      background-color: $dark-brown;
-      border-radius: 5px;
-      padding: 10px;
-    }
-  }
-}
 
 .flexContainer {
   width: 100%;
