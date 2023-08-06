@@ -1,0 +1,58 @@
+@import './globals.scss';
+
+.navContainer {
+  zoom: 0.8;
+  position: relative;
+  z-index: 100;
+
+  /* Adding margin at the top and left and right */
+  
+  margin-top: 50px;           // add margin to the top
+  margin-inline-start: 100px; // keep existing left-right margins
+  margin-inline-end: 100px;
+  
+  padding-left: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Adjusting the width to account for the margins */
+  width: calc(90% - 50px * 2); /* Subtracting the added margins */
+  
+  box-shadow: 0px 10px 30px $dark-overlay;
+  font-family: $secondary-font;
+
+  h1 {
+    color: $secondary-color;
+    font-size: 50px;
+  }
+}
+
+.navUl {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    display: flex;
+    gap: 1em;
+    font-size: 50px;  
+
+    &:active {
+      color: white;
+      background-color: $link-color;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.navItemsLi {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 50px;
+}

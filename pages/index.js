@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NewsletterForm from '../components/Newsletter';
-import NavigationBar from '../components/NavigationBar';  // Importing NavigationBar component
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <NavigationBar />  {/* Using NavigationBar component here */}
       <div className={styles.flexContainer}>
         <div className={styles.sectionImage}>
           <Image

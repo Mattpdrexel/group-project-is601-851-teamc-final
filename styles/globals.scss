@@ -10,3 +10,12 @@ $secondary-color: #D56A34;
 $link-color: #3F170E;
 $accent-color: #A95E33;
 $dark-overlay: rgba(0, 0, 0, 0.4);
+
+.defaultBackground {
+    background-color: $primary-color;
+  }
+
+  .navWrapper {
+    background-color: $primary-color;
+    padding-top: 15px;
+}
