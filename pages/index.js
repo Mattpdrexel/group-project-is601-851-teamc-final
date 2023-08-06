@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import NewsletterForm from '../components/Newsletter';
 import styles from '../styles/Home.module.scss';
 

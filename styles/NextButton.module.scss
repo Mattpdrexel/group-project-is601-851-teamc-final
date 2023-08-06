@@ -1,0 +1,25 @@
+// styles/NextButton.module.scss
+@import './globals.scss';
+
+.nextButton {
+  padding: 15px 30px;
+  background-color: $dark-brown;
+  border-radius: 8px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+
+  &:hover {
+    background-color: darken($dark-brown, 10%);
+    text-decoration: none;
+  }
+
+  .arrow {
+    margin-left: 20px;
+    font-size: 32px;
+  }
+}

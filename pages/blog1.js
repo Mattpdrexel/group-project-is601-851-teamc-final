@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/blog1.module.scss';
+import NextButton from '../components/NextButton';  // Adjust the path as necessary based on your directory structure
 
 export default function Blog1() {
   return (
@@ -20,9 +21,10 @@ export default function Blog1() {
           "As a busy professional, I cherish my midday coffee breaks at Rise & Grind. The no-frills, high-quality coffee experience provides the tranquility I need in the midst of my fast-paced corporate life."
         </p>
       </div>
-      <div className={styles.nextButton}>
-      Next &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="arrow">&gt;</span>
-        </div>
+      
+      <div>
+      <NextButton href="/blog2" />
+      </div>
     </div>
   );
 }
