@@ -36,7 +36,7 @@
   gap: 10px;
 
   a {
-    color: $link-color;
+    color: $dark-brown;
     text-decoration: none;
     display: flex;
     gap: 1em;
@@ -44,7 +44,7 @@
 
     &:active {
       color: white;
-      background-color: $link-color;
+      background-color: $dark-brown;
       border-radius: 5px;
       padding: 10px;
     }
