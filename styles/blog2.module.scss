@@ -1,0 +1,87 @@
+@import './globals.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+
+  .imageWrapper {
+    position: relative;
+    width: 25%;  // Width of the main image, adjust as needed
+    height: auto;
+    margin: 0 2%;
+    order: 2;
+
+    .mainImage {
+      width: 100%;
+      height: auto;
+    }
+
+    .leftQuote {
+      position: absolute;
+      top: -10px;  // offsetting a bit from the top
+      left: -100px;  // offsetting a bit from the left
+      width: 20%; 
+      height: auto;
+    }
+
+    .rightQuote {
+      position: absolute;
+      bottom: -10px;  // offsetting a bit from the bottom
+      right: -100px;  // offsetting a bit from the right
+      width: 20%; 
+      transform: scaleX(-1);
+    }
+  }
+
+  .textBox {
+    width: 30%;  
+    background-color: transparent;  
+    padding: 20px;
+    border-radius: 10px;
+    order: 3; 
+    margin-left: 2%; 
+
+    .largeText {
+      font-size: 24px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .mediumText {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+  .nextButton {
+    position: absolute;
+    bottom: 50px;  // adjust this as needed for positioning
+    right: 50px;   // adjust this too if necessary
+    padding: 15px 30px;
+    background-color: $dark-brown;
+    border-radius: 8px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    text-decoration: none; // This line removes the underline
+
+    &:hover {
+      background-color: darken($dark-brown, 10%);
+    }
+
+    .arrow {
+      margin-left: 20px;
+      font-size: 32px;
+    }
+}
+
+}

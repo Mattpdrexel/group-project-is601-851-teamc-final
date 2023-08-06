@@ -62,5 +62,9 @@
       margin-left: 20px;
       font-size: 32px;
     }
+    a {
+      text-decoration: none; // This will remove the underline
+      color: inherit;  // This ensures the link inherits the color of its parent, useful in case the link gets a default color
+  }
   }
 }
