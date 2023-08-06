@@ -1,7 +1,7 @@
 // components/NavigationBar.js
 
 import Link from 'next/link';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/NavigationBar.module.scss';
 
 const NavigationBar = () => (
   <div className={styles.navContainer}>

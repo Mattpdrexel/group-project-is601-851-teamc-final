@@ -1,31 +1,30 @@
-
 import Head from 'next/head'
 import '../styles/globals.scss';
-import Layout from '../components/NavigationBar';
+import NavigationBar from '../components/NavigationBar';
 
-function MyApp({ Component, PageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Rise & Grind</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-
+      <Head >
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLLX2NVVX8"></script>
-        <script>
-          {`
+        <script dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-MLLX2NVVX8');
-          `}
+          `
+        }}>
         </script>
-        
       </Head>
-      <Layout>
-      <Component {...pageProps} />
-    </Layout>
+      <div className="defaultBackground">
+        
+      <div className="navWrapper">
+        <NavigationBar />
+      </div>
 
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }
