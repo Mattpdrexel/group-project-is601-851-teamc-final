@@ -20,8 +20,6 @@
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
 
 }
-
-  
   .formTitle {
     color: #3F170E;
     font-family: 'Rubik';
@@ -43,6 +41,8 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 25px;
+
   }
   
   .subscribeButton {
@@ -55,7 +55,3 @@
     border-radius: 5px;
     font-family: 'Rubik';
 }
-  
-  .emailInput::placeholder { /* Most modern browsers */
-    font-size: 25px;
-  }

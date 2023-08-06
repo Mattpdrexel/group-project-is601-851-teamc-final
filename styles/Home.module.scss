@@ -1,0 +1,133 @@
+@import './globals.scss';
+
+.body {
+  font-family: $primary-font;
+}
+
+.container {
+  zoom: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.navContainer {
+  position: relative;
+  z-index: 100;
+  margin-top: 75px;
+  padding-left: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  box-shadow: 0px 10px 30px $dark-overlay;
+  font-family: $secondary-font;
+  padding: 0 30px;
+
+  h1 {
+    color: $secondary-color;
+    font-size: 50px;
+  }
+}
+
+.navUl {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    display: flex;
+    gap: 1em;
+    font-size: 50px;  
+
+    &:active {
+      color: white;
+      background-color: $link-color;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.flexContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionImage {
+  flex: 1;
+  padding-left: 200px;
+}
+
+.infoSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 60px;
+  color: #454641;
+  background-color: $primary-color;
+
+  .textContent {
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 50px;
+
+      span {
+        color: $accent-color;
+      }
+    }
+
+    .heroText {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.callToAction {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.footerBanner {
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.heroText {
+  max-width: 600px;
+}
+
+.navItemsLi {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+/* Headings to use Fjalla One */
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $secondary-font;
+}
