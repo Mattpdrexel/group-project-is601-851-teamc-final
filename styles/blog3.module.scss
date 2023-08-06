@@ -1,0 +1,39 @@
+@import './globals.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: $primary-color;  // Assuming you have a variable defined for the background, or replace with a color of your choice
+
+  .steveImage {
+    position: absolute;
+    left: 10%;  // Adjust margin as needed
+    width: 25%;  // Adjust width as necessary
+    height: auto;
+  }
+
+  .textBox {
+    position: absolute;
+    right: 10%;  // Adjust as necessary to position next to the image
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;  // Adjust width as required
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    font-family: $primary-font;
+
+    .largeText {
+      font-size: 32px;  
+      margin-bottom: 20px;
+    }
+
+    .mediumText {
+      font-size: 24px;
+      font-style: italic;
+    }
+  }
+}
