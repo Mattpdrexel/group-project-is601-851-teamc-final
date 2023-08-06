@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PrivacyPolicy = () => {
-  const htmlContent = `
+const htmlContent = `
   <style>
   [data-custom-class='body'],
   [data-custom-class='body'] * {
@@ -985,6 +985,7 @@ const PrivacyPolicy = () => {
                                                                                           This privacy policy was created using Termly's <a style="color: rgb(48, 48, 241) !important;" href="https://termly.io/products/privacy-policy-generator/">Privacy Policy Generator</a>.
                                                                                       </div>
   `;
+
 
   return (
     <div style={{ marginTop: '50px' }}>
