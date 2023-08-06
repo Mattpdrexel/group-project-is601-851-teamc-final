@@ -36,7 +36,7 @@ jobs:
           sleep 5
 
       - name: Run tests
-        run: npx -p @playwright/test playwright test tests/local.test.js
+        run: npm run test
 
   # Test job after Vercel deployment
   test_after_deploy:
@@ -58,4 +58,4 @@ jobs:
         run: npx playwright install
 
       - name: Run tests on deployed site
-        run: npx -p @playwright/test playwright test tests/deployed.test.js
+        run: npm run test
