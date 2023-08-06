@@ -1,0 +1,77 @@
+@import './globals.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;             
+  align-items: flex-start;  
+  justify-content: flex-start;
+  padding-top: 50px;       
+
+  .imgWrapper {
+    margin-left: 200px;
+    transform: scaleX(-1);
+  }
+
+  .textBox {
+    position: absolute;
+    top: 350px;
+    right: 75px;
+    bottom: 0;
+    width: 35%;  
+    height: 30%;
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;  
+
+    .primaryText {
+      font-size: 50px;
+      font-family: $primary-font;
+      color: black;
+      margin: 0;
+    }
+
+    .secondaryHeader {
+      font-size: 30px;
+      font-family: $secondary-font;
+      color: black;
+      margin: 0;
+    }
+
+    .secondaryText {
+      font-family: $secondary-font;
+      font-style: italic;
+      color: black;;
+      margin-top: 10px;
+      font-size: 30px;
+    }
+  }
+
+  // Updated styles for the "Next" button
+  .nextButton {
+    position: absolute;
+    bottom: 300px;       
+    left: 800px;         
+    padding: 15px 30px;  // Increased padding
+    background-color: $dark-brown;
+    border-radius: 8px;
+    color: white;
+    font-size: 28px;     // Increased font-size
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;       // Flexbox to position text and arrow
+    align-items: center; // Vertically align content
+
+    &:hover {
+      background-color: darken($dark-brown, 10%);
+    }
+
+    .arrow {
+      margin-left: 20px; // Space between text and arrow
+      font-size: 32px;   // Slightly larger arrow for emphasis
+    }
+  }
+}

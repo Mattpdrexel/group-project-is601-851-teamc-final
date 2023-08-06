@@ -10,7 +10,7 @@ const NavigationBar = () => (
       <ul className={styles.navUl}>
         <li className={styles.navItemsLi}><Link legacyBehavior href="/"><a>Home</a></Link></li>
         <li className={styles.navItemsLi}><Link legacyBehavior href="/aboutus"><a>About Us</a></Link></li>
-        <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Blog</a></Link></li>
+        <li className={styles.navItemsLi}><Link legacyBehavior href="/blog1"><a>Blog</a></Link></li>
         <li className={styles.navItemsLi}><Link legacyBehavior href="#"><a>Privacy</a></Link></li>
       </ul>
     </nav>
