@@ -38,7 +38,7 @@ const NewsletterForm = () => {
             name="subscribe"
             id="mc-embedded-subscribe"
             className={styles.subscribeButton}
-            value="Get my Cup"
+            value="Get my cup"
           />
         </div>
         <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
