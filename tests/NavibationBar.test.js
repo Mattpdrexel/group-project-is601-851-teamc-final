@@ -1,5 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
+const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
+
 // URLs of the pages you want to test
 const pages = ['/', '/aboutus', '/blog1', '/blog2', '/blog3', '/privacypolicy'];
 
@@ -7,7 +9,7 @@ test.describe('Navigation Bar Tests', () => {
 
   for (let pageUrl of pages) {
     test(`Navbar is visible on ${pageUrl}`, async ({ page }) => {
-      await page.goto(`http://localhost:3000${pageUrl}`);
+      await page.goto(`${BASE_URL}${pageUrl}`);
 
       // Check for navigation bar based on its unique element, e.g., h1 text
       const navbarTitle = await page.$('h1');
