@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/NewsletterForm.module.css';
+import styles from '../styles/NewsletterForm.module.scss';
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState('');
