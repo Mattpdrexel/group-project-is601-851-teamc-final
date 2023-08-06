@@ -16,6 +16,7 @@ export default function Home() {
             width={750}
             height={750}
           />
+         
         </div>
         <div className={styles.infoSection}>
           <div className={styles.textContent}>
