@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import NavigationBar from '../components/NavigationBar'; // Importing NavigationBar component
 import styles from '../styles/aboutus.module.scss';
 
 export default function AboutUs() {
   return (
     <div className={styles.container}>
-      <NavigationBar /> {/* Using NavigationBar component here */}
 
       <main className={styles.main}>
         <div className={styles.infoContainer}>
@@ -22,9 +20,10 @@ export default function AboutUs() {
             <p>What sets us apart? We're relatable, down-to-earth, and genuinely invested in our community. We celebrate the simple pleasure of a great cup of coffee and the role we play in the daily grind of our customers. Our spaces are designed for comfort and connection, offering a break from the hustle and a chance to refuel, reconnect, and rise to the day's challenges.</p>
             
             <p>We are Rise & Grind, and we're honored to be your go-to coffee destination. Explore more to see how we bring this vision to life, both in-store and online.</p>
-            <Image className="img-toast" src="/images/Art/Unsplash/nathan-dumlao-6VhPY27jdps-unsplash 2.png" alt="Image of three people toasting coffee cups" width={1170} height={780} />
           </div>
         </div>
+        <Image className="img-toast" src="/images/Art/Unsplash/nathan-dumlao-6VhPY27jdps-unsplash 2.png" alt="Image of three people toasting coffee cups" width={1170} height={780} />
+
       </main>
 
       <footer className={styles.footer}>
