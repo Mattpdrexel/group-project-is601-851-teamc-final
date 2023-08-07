@@ -81,4 +81,11 @@ test.describe('Navigation Bar Tests', () => {
     expect(nextButton).toBeTruthy();
   });
 
+  test('Privacy Policy page content', async ({ page }) => {
+    const pageUrl = '/privacypolicy';
+    await page.goto(`${BASE_URL}${pageUrl}`);
+    const navbarTitle = await page.$('h1');
+    expect(await navbarTitle.innerText()).toBe('Rise & Grind');
+  });
+
 });
