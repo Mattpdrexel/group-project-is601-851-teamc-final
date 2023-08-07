@@ -42,4 +42,21 @@ test.describe('Navigation Bar Tests', () => {
     // Add more specific checks for other elements on the About Us page if needed
   });
 
+  test('Blog1 page renders correctly', async ({ page }) => {
+    const pageUrl = '/blog1';
+    await page.goto(`${BASE_URL}${pageUrl}`);
+    const heading = await page.textContent('h1');
+    expect(heading).toBe('Patty');
+    const secondaryHeader = await page.textContent('h2');
+    expect(secondaryHeader).toBe('Executive');
+    const secondaryText = await page.textContent('.secondaryText');
+    expect(secondaryText).toContain(
+      'As a busy professional, I cherish my midday coffee breaks at Rise & Grind. The no-frills, high-quality coffee experience provides the tranquility I need in the midst of my fast-paced corporate life.'
+    );
+    const image = await page.$('img[alt="Happy lady with coffee looking to side"]');
+    expect(image).toBeTruthy();
+    const nextButton = await page.$('a[href="/blog2"]');
+    expect(nextButton).toBeTruthy();
+  });
+
 });
