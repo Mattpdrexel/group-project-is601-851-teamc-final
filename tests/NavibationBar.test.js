@@ -66,4 +66,19 @@ test.describe('Navigation Bar Tests', () => {
     expect(nextButton).toBeTruthy();
   });
 
+  test('Blog3 page renders correctly', async ({ page }) => {
+    const pageUrl = '/blog3';
+    await page.goto(`${BASE_URL}${pageUrl}`);
+    const steveImage = await page.$('img[alt="Steve"]');
+    expect(steveImage).toBeTruthy();
+    const largeText = await page.textContent('.largeText');
+    expect(largeText).toBe("Steve's Study Spot");
+    const mediumText = await page.textContent('.mediumText');
+    expect(mediumText).toBe(
+      "As a 24-year-old student juggling assignments, I found my study haven at Rise & Grind. I value the consistent coffee and cozy, distraction-free environment. It's become an integral part of my study routine, smoothing my academic grind."
+    );
+    const nextButton = await page.$('a[href="/blog1"]');
+    expect(nextButton).toBeTruthy();
+  });
+
 });
