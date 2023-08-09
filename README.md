@@ -7,7 +7,7 @@ Final project for Group 'C' at NJIT IS601-851: Web Systems Development
 
 
 Group C Members: 
-- Mathew Pennington
+- Matthew Pennington
 - Pratik Pathak
 - Cheuk Kay Mary Ng
 
