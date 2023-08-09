@@ -14,3 +14,6 @@ Group C Members:
 Welcome to Team C's final project, the up-and-coming coffee shop Rise & Grind of the Regular Guy archetype. Our website is built upon NextJS, enhanced with Mailchimp and Google Analytics while compliant with GDPR, and quality-assured with Playwright tests and Github Action automated workflows.
 
 We have also included a 5-minute video detailing how we put the above together to build a website and showcasing the user journey through it.
+
+![Presentation Video](public/video/Final%20Project%20Presentation.mp4)
+
