@@ -35,10 +35,6 @@ test.describe('Navigation Bar Tests', () => {
     expect(heading).toBe('Rise & Grind');
     const secondaryHeader = await page.textContent('h2');
     expect(secondaryHeader).toBe('Executive');
-    // const secondaryText = await page.textContent('.secondaryText');
-    // expect(secondaryText).toContain(
-    //   'As a busy professional, I cherish my midday coffee breaks at Rise & Grind. The no-frills, high-quality coffee experience provides the tranquility I need in the midst of my fast-paced corporate life.'
-    // );
     const image = await page.$('img[alt="Happy lady with coffee looking to side"]');
     expect(image).toBeTruthy();
     const nextButton = await page.$('a[href="/blog2"]');
@@ -48,20 +44,8 @@ test.describe('Navigation Bar Tests', () => {
   test('Blog2 page renders correctly', async ({ page }) => {
     const pageUrl = '/blog2';
     await page.goto(`${BASE_URL}${pageUrl}`);
-    // const largeText = await page.textContent('.largeText');
-    // expect(largeText).toContain(
-    //   '28-year-old Fiona chose Rise & Grind as her favorite gathering spot. Our casual atmosphere, consistent high-quality coffee, and no-fuss approach make it the perfect spot for her to connect with friends. In Rise & Grind, Fiona found a genuine, comfortable space to unwind and enjoy simple pleasures.'
-    // );
-    // const name = await page.textContent('.name');
-    // expect(name).toBe('Fiona');
-    // const mediumText = await page.textContent('.mediumText');
-    // expect(mediumText).toBe('Loiterer');
     const mainImage = await page.$('img[alt="Description"]');
     expect(mainImage).toBeTruthy();
-    // const leftQuote = await page.$('img[src="/images/Art/Quotes.png"]');
-    // expect(leftQuote).toBeTruthy();
-    // const rightQuote = await page.$('img[src="/images/Art/Quotes.png"]');
-    // expect(rightQuote).toBeTruthy();
     const nextButton = await page.$('a[href="/blog3"]');
     expect(nextButton).toBeTruthy();
   });
@@ -71,12 +55,6 @@ test.describe('Navigation Bar Tests', () => {
     await page.goto(`${BASE_URL}${pageUrl}`);
     const steveImage = await page.$('img[alt="Steve"]');
     expect(steveImage).toBeTruthy();
-    // const largeText = await page.textContent('.largeText');
-    // expect(largeText).toBe("Steve's Study Spot");
-    // const mediumText = await page.textContent('.mediumText');
-    // expect(mediumText).toBe(
-    //   "As a 24-year-old student juggling assignments, I found my study haven at Rise & Grind. I value the consistent coffee and cozy, distraction-free environment. It's become an integral part of my study routine, smoothing my academic grind."
-    // );
     const nextButton = await page.$('a[href="/blog1"]');
     expect(nextButton).toBeTruthy();
   });
