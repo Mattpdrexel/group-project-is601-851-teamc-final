@@ -9,7 +9,7 @@ const Blog2 = () => {
         <div className={styles.imageWrapper}>
         <Image 
             className={styles.mainImage}
-            src="/images/Art/Unsplash/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg"
+            src="/../public/images/Art/Unsplash/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg"
             alt="Description" 
             width={500}   // Arbitrary value, adjust accordingly
             height={500}  // Arbitrary value, adjust accordingly
