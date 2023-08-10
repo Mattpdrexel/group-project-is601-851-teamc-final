@@ -988,7 +988,7 @@ const htmlContent = `
 
 
   return (
-    <div style={{ marginTop: '50px' }}>
+    <div style={{ margin: '50px' }}>
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
   );
