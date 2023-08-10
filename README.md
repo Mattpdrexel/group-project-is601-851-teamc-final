@@ -15,5 +15,5 @@ Welcome to Team C's final project, the up-and-coming coffee shop Rise & Grind of
 
 We have also included a 5-minute video detailing how we put the above together to build a website and showcasing the user journey through it.
 
-![Presentation Video](public/video/Final%20Project%20Presentation.mp4)
+![Presentation Video]([public/video/Final%20Project%20Presentation.mp4](https://youtu.be/5jB00wItuM0))
 
