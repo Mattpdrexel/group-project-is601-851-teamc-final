@@ -37,7 +37,6 @@ const Blog2 = () => {
       <div>
       <NextButton href="/blog3" />
       </div>
-
     </div>
   );
 }

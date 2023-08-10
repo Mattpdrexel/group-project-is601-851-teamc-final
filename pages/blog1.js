@@ -25,6 +25,9 @@ export default function Blog1() {
       <div>
       <NextButton href="/blog2" />
       </div>
+      <footer className={styles.footer}>
+        <p>&copy; 2023 Rise & Grind. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

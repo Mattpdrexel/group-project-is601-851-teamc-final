@@ -67,4 +67,17 @@
       color: inherit;  // This ensures the link inherits the color of its parent, useful in case the link gets a default color
   }
   }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    p {
+      font-size: 16px;
+      color: var(--secondary-color);
+    }
+  }
 }
