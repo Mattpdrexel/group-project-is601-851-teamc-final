@@ -990,6 +990,9 @@ const htmlContent = `
   return (
     <div style={{ margin: '50px' }}>
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <footer >
+        <p>&copy; 2023 Rise & Grind. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

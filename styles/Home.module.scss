@@ -56,22 +56,6 @@
   margin-top: 2rem;
 }
 
-.footerBanner {
-  width: 100%;
-  height: 200px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: orange;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 .heroText {
   max-width: 600px;
 }
@@ -85,4 +69,43 @@
 /* Headings to use Fjalla One */
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $secondary-font;
+}
+
+.footerBannerContainer {
+  position: relative;
+  width: 100%;
+  height: 200px; // moved from .footerBanner
+  margin-top: 40px;
+}
+
+.footerBanner {
+  width: 100%;
+  height: 100%; // Adjusted from the previous 200px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.footer {
+  position: absolute; // To position it over the image
+  bottom: 0%; // Adjust as needed, this is to position it slightly above the bottom
+  left: 50%; // For center alignment
+  transform: translateX(-50%); // For center alignment
+  width: 100%; // Ensure the footer stretches across
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0; // Remove margin since it's positioned absolutely now
+
+  p {
+    font-size: 16px;
+    color: var(--secondary-color);
+  }
 }

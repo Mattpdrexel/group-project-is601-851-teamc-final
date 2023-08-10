@@ -19,7 +19,9 @@ const Blog3 = () => {
       </div>
       <NextButton href="/blog1" />
 
+
     </div>
+    
   );
 }
 

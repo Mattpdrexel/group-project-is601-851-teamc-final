@@ -34,6 +34,9 @@ export default function Home() {
           alt="Rise & Grind Logo"
         />
       </div>
+      <footer className={styles.footer}>
+        <p>&copy; 2023 Rise & Grind. All rights reserved.</p>
+      </footer>
     </div>
   )
 }
