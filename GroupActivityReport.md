@@ -40,5 +40,5 @@ Issues also documented in the [project tab](https://github.com/users/Mattpdrexel
 All three members attended meetings. 
 
 Meeting on 8/04/2023:
-![Meeting on 8/04/2023](public\images\screenshots\meeting_screenshot_08042023.png)
+![Meeting on 8/04/2023](public/images/screenshots/meeting_screenshot_08042023.png)
 
