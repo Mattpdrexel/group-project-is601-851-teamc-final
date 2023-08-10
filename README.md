@@ -30,14 +30,14 @@ We have also included a 5-minute video detailing how we put the above together t
 Playwright tests were developed to ensure site integrity was maintained.
 Github actions were utilized to perform testing prior to merging, as well as testing the deployed Vercel site after integration:
 
-![Github Actions](public\images\screenshots\github_actions.png)
+![Github Actions](public/images/screenshots/github_actions.png)
 
 ## Google Analytics
 Google analytics were confirmed to accurately reflect user activity, including location data:
-![Google Analytics](public\images\screenshots\google_analytics.png)
+![Google Analytics](public/images/screenshots/google_analytics.png)
 
 ## Mailchimp
 Mailchimp was used as an easy way to allow users to subscribe with their email:
-![Mail Chimp](public\images\screenshots\mail_chimp_contacts.png)
+![Mail Chimp](public/images/screenshots/mail_chimp_contacts.png)
 
 
